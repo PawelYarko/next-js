@@ -1,0 +1,7 @@
+{
+    "posts": [
+        {"id": 1, "title": "next js first", "desc": "next js desc 1"},
+        {"id": 2, "title": "next js second", "desc": "next js desc 2"},
+        {"id": 3, "title": "next js third", "desc": "next js desc 3"}
+    ]
+}
