@@ -1,6 +1,7 @@
-import Link from 'next/link';
 import Head from 'next/head';
-import s from './MainLayout.module.css';
+import { Navigation } from '../Navigation/Navigation';
+import s from '../../common/container.module.scss';
+
 
 export function MainLayout ({children, title = "Home page"}) {
     return (
@@ -11,13 +12,8 @@ export function MainLayout ({children, title = "Home page"}) {
             <meta name="description" content="hookah descr" />
             <meta charSet="utf-8"/>
         </Head>
-        <nav className={s.navigation}>
-            <Link href={'/'}>Home</Link>
-            <Link href={'/about'}>About</Link>
-            <Link href={'/posts'}>Posts</Link>
-            <Link href={'/contacts'}>Contacts</Link>
-        </nav>
-        <main>{children}</main>
+        <Navigation/>
+        <main className={s.container}>{children}</main>
         </>
     )
 }

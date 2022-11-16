@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import {useState, useEffect} from 'react';
-import {MainLayout} from '../../components/MainLayout';
+import {MainLayout} from '../../components/MainLayout/MainLayout';
 
 export default function Posts({ posts: serverPosts }){
     const [posts, setPosts] = useState(serverPosts);
@@ -23,8 +23,6 @@ export default function Posts({ posts: serverPosts }){
           </MainLayout>  
         )
     }
-
-    console.log(posts)
 
     return(
     <MainLayout>

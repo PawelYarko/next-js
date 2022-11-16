@@ -1,0 +1,19 @@
+.card{
+    width: 289px;
+    padding-top: 15px;
+}
+
+.thumb{
+    width: 289px;
+    height: 228px;
+}
+
+.title{
+    padding: 10px 30px;
+    margin: 0;
+}
+
+.cost{
+    padding: 0 0 30px 30px;
+    margin: 0;
+}

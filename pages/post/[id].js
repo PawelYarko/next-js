@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react';
 import {useRouter} from 'next/router';
 import Link from 'next/link';
-import {MainLayout} from '../../components/MainLayout';
+import {MainLayout} from '../../components/MainLayout/MainLayout/MainLayout';
 
 export default function Post( {post: serverPost} ){
     const [post, setPost] = useState(serverPost);
