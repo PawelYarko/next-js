@@ -44,6 +44,9 @@ export default function Post( {post: serverPost} ){
 //  }
 
 export async function getServerSideProps({ query, req }){
+    if(!req){
+        return {post: null};
+    }
     const res = await fetch(`${process.env.API_URL}/posts/${query.id}`);
     const post = await res.json();
     return {props:{post}};

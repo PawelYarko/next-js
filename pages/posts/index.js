@@ -4,12 +4,11 @@ import {MainLayout} from '../../components/MainLayout';
 
 export default function Posts({ posts: serverPosts }){
     const [posts, setPosts] = useState(serverPosts);
-
     useEffect(()=>{
         async function load(){
            const res = await fetch(`${process.env.API_URL}/posts`);
-           const json = await res.json();
-           setPosts(json)
+           const data = await res.json();
+           setPosts(data)
         }
         if(!serverPosts){
             load();
@@ -25,6 +24,8 @@ export default function Posts({ posts: serverPosts }){
         )
     }
 
+    console.log(posts)
+
     return(
     <MainLayout>
     <h1>Posts Page</h1>
@@ -38,11 +39,17 @@ export default function Posts({ posts: serverPosts }){
     </MainLayout>)
 }
 
-Posts.getInitialProps = async ({req}) => {
-    if(!req){
-        return {posts: null};
-    }
+// Posts.getInitialProps = async ({req}) => {
+//     if(!req){
+//         return {posts: null};
+//     }
+//     const res = await fetch(`${process.env.API_URL}/posts`);
+//     const posts = await res.json();
+//     return {posts};
+//  }
+
+export async function getServerSideProps({ req }){
     const res = await fetch(`${process.env.API_URL}/posts`);
     const posts = await res.json();
-    return {posts};
- }
+    return {props:{posts}};
+} 
