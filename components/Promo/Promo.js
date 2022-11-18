@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Card } from './Card/Card';
+import { Button } from '../../common/Button/Button'
 import s from './Promo.module.css';
 
 
@@ -20,8 +21,12 @@ export function Promo () {
                     <Card/>
                     <Card/>
                     <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>  
                 </div>
-                
+                    <Button/>
             </section>
         </>
     )

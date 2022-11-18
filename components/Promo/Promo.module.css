@@ -4,6 +4,8 @@
 }
 
 .titleContainer{
+    display: flex;
+    justify-content: space-around;
     padding: 0 25px 0 25px;
     margin-bottom: 45px;
 }
