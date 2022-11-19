@@ -8,8 +8,8 @@ export default function Home() {
     <>
     <MainLayout title={'Home page'}>
       <h1>Main page</h1>
-      <p><Link href="/about">About</Link></p>
-      <p><Link href="/posts">About</Link></p>
+      {/* <p><Link href="/about">About</Link></p>
+      <p><Link href="/posts">About</Link></p> */}
       <Promo/>
     </MainLayout>
     </>

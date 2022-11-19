@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { Navigation } from '../Navigation/Navigation';
+import { Footer } from '../Footer/Footer';
 import s from '../../common/container.module.scss';
 
 
@@ -14,6 +15,7 @@ export function MainLayout ({children, title = "Home page"}) {
         </Head>
         <Navigation/>
         <main className={s.container}>{children}</main>
+        <Footer/>
         </>
     )
 }
