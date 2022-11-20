@@ -1,16 +1,24 @@
-import svg1 from '../../public/cardSvg/1.svg';
-import svg2 from '../../public/cardSvg/2.svg';
-import svg3 from '../../public/cardSvg/3.svg';
+import { useState } from 'react';
 import Image from 'next/image';
 import s from './HoverComponents.module.css';
 
 
 export function HoverComponents () {
+    const [hover, setHover] = useState(false);
     return (
-        <div className={s.container}>
-            <Image src={svg1} alt="img" className={s.img1}/>
-            <Image src={svg2} alt="img" className={s.img2}/>
-            <Image src={svg3} alt="img" className={s.img3}/>
+        <div className={s.container}
+            onMouseEnter={()=>{
+                setHover(true);
+            }}
+            onMouseLeave={()=>{
+                setHover(false);
+            }}
+        >
+            {hover ? 
+                <Image src='/cardSvg/btnCardHover.svg' alt="img" className={s.btnCard} width="259" height="50"/>
+                :
+                <Image src='/cardSvg/btnCard.svg' alt="img" className={s.btnCard} width="259" height="50"/>
+                }
         </div>
     )
 }

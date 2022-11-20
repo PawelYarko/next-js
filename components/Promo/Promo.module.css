@@ -16,7 +16,16 @@
     font-size: 30px;
     font-weight: 500;
     line-height: 34px;
+    color:#3E424B;
 }
+
+.titleHover{
+    color: #BB8C5F;
+}
+
+/* .line{} */
+
+
 
 .title:last-child{
     margin-right: 0px;      
@@ -25,6 +34,6 @@
 .wrapper{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* grid-auto-rows: 200px; */
     column-gap: 20px;
+    row-gap: 35px;
 }
