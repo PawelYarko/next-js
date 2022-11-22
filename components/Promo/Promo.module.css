@@ -8,6 +8,7 @@
     justify-content: space-around;
     padding: 0 25px 0 25px;
     margin-bottom: 45px;
+    list-style: none;
 }
 
 .title{
@@ -19,11 +20,26 @@
     color:#3E424B;
 }
 
-.titleHover{
+.title:hover:focus{
     color: #BB8C5F;
 }
 
-/* .line{} */
+/* .titleHover{
+    margin-right: 60px;
+    font-family: Jost;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 34px;
+    color: #BB8C5F;
+} */
+
+/* .line{
+    display: none;
+}
+
+.lineHover{
+    display: block;
+} */
 
 
 

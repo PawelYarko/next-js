@@ -20,7 +20,7 @@ export function Footer () {
         <div className={s.conatiner}>
             <div className={s.contacts}>
                 {socialLinks.map(({title, svgPath}) => 
-                    <Image src={svgPath} alt={title}  width="40" height="40" className={s.social}/>
+                    <Image src={svgPath} alt={title}  width="40" height="40" key={title} className={s.social}/>
                 )}
                 <div className={s.call}>
                     <Image src="/social/call.svg" alt="call"  width="28" height="28" className={s.callIcon}/>
