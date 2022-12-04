@@ -12,6 +12,15 @@ const sections = [
     {"title": "Акционные товары", "id": "4"},
 ];
 
+const cardList = [
+    {"id": "1", "productName" : "Foxxx Kitsune Mini Black Vintage RCA", "cost": "6 000 $", "img": "/promoimg.jpg", "imgAlt": "imgName"},
+    {"id": "2", "productName" : "Foxxx Kitsune Mini Black Vintage RCA", "cost": "6 000 $", "img": "/promoimg.jpg", "imgAlt": "imgName"},
+    {"id": "3", "productName" : "Foxxx Kitsune Mini Black Vintage RCA", "cost": "6 000 $", "img": "/promoimg.jpg", "imgAlt": "imgName"},
+    {"id": "4", "productName" : "Foxxx Kitsune Mini Black Vintage RCA", "cost": "6 000 $", "img": "/promoimg.jpg", "imgAlt": "imgName"},
+    {"id": "5", "productName" : "Foxxx Kitsune Mini Black Vintage RCA", "cost": "6 000 $", "img": "/promoimg.jpg", "imgAlt": "imgName"},
+    {"id": "6", "productName" : "Foxxx Kitsune Mini Black Vintage RCA", "cost": "6 000 $", "img": "/promoimg.jpg", "imgAlt": "imgName"},
+]
+
 export function Promo () {
     const [current, setCurrent] = useState(false); 
 
@@ -36,13 +45,16 @@ export function Promo () {
                                 id={id}>
                                     {title}
                             </Link>
-                        {/* {current && <Image src="/line.svg" alt="img" className={s.line} width="272" height="2"/>} */}
                         </li>
                     )}  
                 </ul> 
-                <div className={s.wrapper}>
-                    <Card/>
-                </div>
+                    <ul className={s.wrapper}>
+                        {cardList.map(({id, productName, cost, img, imgAlt})=>(
+                            <li key={id}>
+                                <Card id={id} productName={productName} cost={cost} img={img} imgAlt={imgAlt}/> 
+                            </li>
+                        ))} 
+                    </ul>  
                     <Button/>   
             </section>
         </>
