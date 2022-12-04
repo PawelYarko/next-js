@@ -15,13 +15,13 @@ const sections = [
 export function Promo () {
     const [current, setCurrent] = useState(false); 
 
-    // const handleCurrentElem = (e) =>{
-    //     const currId = e.currentTarget.id;
+    const handleCurrentElem = (e) =>{
+        const currId = e.currentTarget.id;
 
-    //     sections.find(({id}) =>{ 
-    //         currId === id ? setCurrent(true) : setCurrent(false);
-    //     })
-    // }
+        sections.find(({id}) =>{ 
+            // console.log(currId === id)
+        })
+    }
 
     return (
         <>
@@ -31,7 +31,7 @@ export function Promo () {
                         <li>
                             <Link href={'/'} 
                                 className={s.title} 
-                                // onClick={handleCurrentElem} 
+                                onClick={handleCurrentElem} 
                                 key={id} 
                                 id={id}>
                                     {title}
@@ -42,15 +42,8 @@ export function Promo () {
                 </ul> 
                 <div className={s.wrapper}>
                     <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>  
                 </div>
-                    <Button/>
+                    <Button/>   
             </section>
         </>
     )

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import {MainLayout} from '../components/MainLayout/MainLayout';
 import { Promo } from '../components/Promo/Promo';
+import { Catalog } from '../components/Catalog/Catalog';
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       {/* <p><Link href="/about">About</Link></p>
       <p><Link href="/posts">About</Link></p> */}
       <Promo/>
+      <Catalog/>
     </MainLayout>
     </>
   )
