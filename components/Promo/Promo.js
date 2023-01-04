@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import useGetGalleryQuery from '../../redux/gallery/gallerySelectors';
 import { Card } from './Card/Card';
 import { Button } from '../../common/Button/Button'
 import s from './Promo.module.css';
+
+
 
 const sections = [
     {"title": "Хиты продаж", "id": "1"},

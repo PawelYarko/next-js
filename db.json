@@ -3,5 +3,15 @@
         {"id": 1, "title": "next js first", "desc": "next js desc 1"},
         {"id": 2, "title": "next js second", "desc": "next js desc 2"},
         {"id": 3, "title": "next js third", "desc": "next js desc 3"}
+    ],
+
+    "postsItems": [
+        {"id": "1", "productName" : "Foxxx Kitsune Mini Black Vintage RCA", "cost": "1 000 $", "img": "/promoimg.jpg", "imgAlt": "imgName"},
+        {"id": "2", "productName" : "Foxxx Kitsune Mini Black Vintage RCA", "cost": "2 000 $", "img": "/promoimg.jpg", "imgAlt": "imgName"},
+        {"id": "3", "productName" : "Foxxx Kitsune Mini Black Vintage RCA", "cost": "3 000 $", "img": "/promoimg.jpg", "imgAlt": "imgName"},
+        {"id": "4", "productName" : "Foxxx Kitsune Mini Black Vintage RCA", "cost": "4 000 $", "img": "/promoimg.jpg", "imgAlt": "imgName"},
+        {"id": "5", "productName" : "Foxxx Kitsune Mini Black Vintage RCA", "cost": "5 000 $", "img": "/promoimg.jpg", "imgAlt": "imgName"},
+        {"id": "6", "productName" : "Foxxx Kitsune Mini Black Vintage RCA", "cost": "6 000 $", "img": "/promoimg.jpg", "imgAlt": "imgName"},
+        {"id": "7", "productName" : "Foxxx Kitsune Mini Black Vintage RCA", "cost": "7 000 $", "img": "/promoimg.jpg", "imgAlt": "imgName"}
     ]
 }

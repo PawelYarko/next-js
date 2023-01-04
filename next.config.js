@@ -1,15 +1,15 @@
-/** @type {import('next').NextConfig} */
+// /** @type {import('next').NextConfig} */
 
-require('dotenv').config()
+// require('dotenv').config()
 
-const nextConfig = {
-  reactStrictMode: true,
-}
+// const nextConfig = {
+//   reactStrictMode: true,
+// }
 
-module.exports = nextConfig
+// module.exports = nextConfig
 
-module.exports = {
-  env:{
-    API_URL: process.env.API_URL
-  }
-}
+// module.exports = {
+//   env:{
+//     API_URL: process.env.API_URL
+//   }
+// }
